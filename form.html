@@ -173,9 +173,17 @@
                     <option value="retirementPlanning">Retirement Planning</option>
                     <option value="childEducation">Child Education</option>
                     <option value="existingInsurance">Existing Insurance Policies</option>
-                    <option value="sourceOfIncome">Source of Income</option>
-                    <option value="other">Any Other Relevant Information</option>
-                </select>
+                  </select>
+
+                <label for="income">Source of Income:</label>
+                <select id="Income" name="policyPurpose" required>
+                    <option value="retirementPlanning">Salaried</option>
+                    <option value="childEducation">Non-salaried</option>
+                    <option value="existingInsurance">Self-employed</option>
+                  </select>
+
+                <label for="Information">Any relavent Information:</label>
+                <input type="text" id="Information" name="Information" required>
                 
                 <button type="button" class="prev-btn">Previous</button>
                 <button type="submit" class="submit-btn">Submit</button>
