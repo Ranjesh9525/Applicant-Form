@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Tachyon Finance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Tachyon Finance Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link home-btn">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link form-btn">Form <span class="dropdown-indicator">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="form.html">Client</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="multiStepForm">
+            <div class="form-step">
+                <h2>Basic Details</h2>
+                <label for="firstName">Applicant First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="middleName">Applicant Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+                
+                <label for="lastName">Applicant Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="fatherName">Applicant Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+                
+                <label for="motherName">Applicant Mother's Name:</label>
+                <input type="text" id="motherName" name="motherName" required>
+                
+                <label for="dob">Date of Birth (dd-mm-yyyy):</label>
+                <input type="date" id="dob" name="dob" placeholder="dd-mm-yyyy" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                </select>
+                
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" required>
+                
+                <label for="aadhaar">Aadhaar No:</label>
+                <input type="text" id="aadhaar" name="aadhaar" maxlength="12" required>
+                
+                <label for="voterID">Voter ID No:</label>
+                <input type="text" id="voterID" name="voterID" required>
+                
+                <label for="pan">PAN Card No:</label>
+                <input type="text" id="pan" name="pan" required>
+                
+                <label for="address1">Address Line 1:</label>
+                <input type="text" id="address1" name="address1" required>
+                
+                <label for="address2">Address Line 2:</label>
+                <input type="text" id="address2" name="address2">
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" required>
+                
+                <label for="mobile">Mobile No:</label>
+                <input type="text" id="mobile" name="mobile" maxlength="10" required>
+                
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <div class="form-step">
+                <h2>Nominee Details</h2>
+                <label for="nomineeName">Nominee Name:</label>
+                <input type="text" id="nomineeName" name="nomineeName" required>
+                
+                <label for="nomineeRelation">Nominee Relation:</label>
+                <select id="nomineeRelation" name="nomineeRelation" required>
+                    <option value="male">Mother</option>
+                    <option value="female">Father</option>
+                    <option value="transgender">Adult Child</option>
+                </select>
+                
+                <label for="nomineeFatherName">Nominee Father's Name:</label>
+                <input type="text" id="nomineeFatherName" name="nomineeFatherName" required>
+                
+                <label for="nomineeMotherName">Nominee Mother's Name:</label>
+                <input type="text" id="nomineeMotherName" name="nomineeMotherName" required>
+                
+                <label for="nomineeDob">Nominee Date of Birth (dd-mm-yyyy):</label>
+                <input type="date" id="nomineeDob" name="nomineeDob" placeholder="dd-mm-yyyy" required>
+                
+                <label for="nomineeGender">Nominee Gender:</label>
+                <select id="nomineeGender" name="nomineeGender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                </select>
+                
+                <label for="nomineeAadhaar">Nominee Aadhaar No:</label>
+                <input type="text" id="nomineeAadhaar" name="nomineeAadhaar" maxlength="12" required>
+                
+                <label for="medicalHistory">Medical History:</label>
+                <textarea id="medicalHistory" name="medicalHistory" required></textarea>
+                
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <div class="form-step">
+                <h2>Advanced Details</h2>
+                <label for="policyType">Type of Policies:</label>
+                <select id="policyType" name="policyType" required>
+                    <option value="endowment">Endowment</option>
+                    <option value="term">Term</option>
+                    <option value="wholeLife">Whole Life</option>
+                </select>
+                
+                <label for="sumAssured">Sum Assured:</label>
+                <input type="number" id="sumAssured" name="sumAssured" required>
+                
+                <label for="premiumPoint">Premium Point and Frequency:</label>
+                <input type="text" id="premiumPoint" name="premiumPoint" required>
+                
+                <label for="policyTerm">Policy Term:</label>
+                <input type="number" id="policyTerm" name="policyTerm" required>
+                
+                <label for="riders">Riders:</label>
+                <input type="text" id="riders" name="riders">
+                
+                <label for="paymentMode">Payment Mode:</label>
+                <select id="paymentMode" name="paymentMode" required>
+                    <option value="online">Online</option>
+                    <option value="bankTransfer">Bank Transfer</option>
+                    <option value="cheque">Cheque</option>
+                </select>
+                
+                <label for="bankName">Bank Name:</label>
+                <input type="text" id="bankName" name="bankName" required>
+                
+                <label for="ifscCode">IFSC Code:</label>
+                <input type="text" id="ifscCode" name="ifscCode" required>
+                
+                <label for="accountNo">Account No:</label>
+                <input type="text" id="accountNo" name="accountNo" required>
+                
+                <label for="accountHolderName">Account Holder Name:</label>
+                <input type="text" id="accountHolderName" name="accountHolderName" required>
+                
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch" required>
+                
+                <label for="policyPurpose">Policy Purpose:</label>
+                <select id="policyPurpose" name="policyPurpose" required>
+                    <option value="retirementPlanning">Retirement Planning</option>
+                    <option value="childEducation">Child Education</option>
+                    <option value="existingInsurance">Existing Insurance Policies</option>
+                    <option value="sourceOfIncome">Source of Income</option>
+                    <option value="other">Any Other Relevant Information</option>
+                </select>
+                
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tachyon Finance</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
